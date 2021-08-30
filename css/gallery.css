@@ -1,0 +1,113 @@
+/* gallery-section---------------- */
+
+.gallery-section{
+    min-height: 160vh;
+    width: 100%;
+    background: linear-gradient(0deg, white,black, black, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-head{
+    margin: 40px 20px 60px 20px;
+    font-size: 28px;
+    font-family: 'Play';
+    background: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.gallery-head span{
+    color: black;
+}
+
+
+.gallery{
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+    width: 90%;
+}
+
+.gallery-item{
+    display: inline-block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 90%;
+    transition: 0.4s ease-in-out;
+}
+.gallery-image{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.gallery-item:hover .gallery-image{
+    transform: scale(1.07);
+    opacity: 0.9;
+    filter: blur(1px);
+}
+.gallery-item-name{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 10;
+    transition: 0.4s ease-in-out;
+}
+
+.gallery-item:hover .gallery-item-name{
+    opacity: 0.9;
+}
+
+@media screen and (max-width:1024px){
+    .gallery-item-name{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .gallery-item-name{
+        font-size: 12px;
+    }
+   .gallery{
+       column-count: 3;
+   }
+}
+
+@media screen and (max-width:500px){
+    .gallery-item-name{
+        font-size: 12px;
+    }
+    .gallery{
+        column-count: 2;
+        width: 100%;
+    }
+    .gallery-item{
+        width: 100%;
+    }
+    .gallery-image{
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width:400px){
+    .gallery-head{
+        font-size:22px;
+    }
+}
+
+ 
+ @media screen and (max-width:375px){
+    .gallery-item-name{
+        font-size: 14px;
+    }
+    .gallery{
+        column-count: 2;
+       
+    }
+    
+ }

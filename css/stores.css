@@ -1,0 +1,119 @@
+.store-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/stores_bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.store-head{
+    margin: 45px 20px 50px 20px;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0,0.8);
+    border-radius: 15px;
+    font-family: 'Play';
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.store-head span{
+    color: rgb(255, 100, 229);
+}
+.stores{
+    flex: 1;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.store-block{
+    width: 90%;
+    min-height: 180px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.left-store-block{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-store-block{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.store-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+.store-name{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Architects Daughter';
+    font-weight: 500;
+    margin: 5px 8px;
+}
+.store-address{
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+    margin: 0px 8px;
+}
+.store-time{
+    margin: 5px 8px;
+    font-size: 18px;
+}
+@media (max-width:930px){
+    .right-store-block{
+        flex: 2;
+    }
+}
+
+@media (max-width:725px){
+    .stores{
+        width: 90%;
+    }
+}
+@media (max-width:590px){
+    .store-image{
+        width: 100px;
+        height: 100px;
+    }
+    .store-name{
+        font-size : 20px;
+    }
+    .store-address{
+        font-size: 14px;
+    }
+    .store-time{
+        font-size: 15px;
+    }
+}
+@media (max-width: 440px){
+    .stores{
+        width: 100%;
+    }
+    .store-block{
+        width: 95%;
+    }
+}
+@media (max-width: 360px){
+    .store-image{
+        width: 80px;
+        height: 80px;
+    }
+}
